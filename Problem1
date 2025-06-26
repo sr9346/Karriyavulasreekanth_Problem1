@@ -1,0 +1,39 @@
+package object;
+import java.util.*;
+public class SmallCal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		dis();
+	
+
+	}
+	public  static void dis() {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter a value : ");
+		double a = sc.nextDouble();
+		System.out.println("Enter b value : ");
+		double b = sc.nextDouble();
+		System.out.println("Enter your operation : ");
+		String operation = sc.next();
+		switch (operation) {
+		case "addition" : 
+			System.out.println(a +b);
+			break;
+		case "subtraction":
+			System.out.println(a-b);
+			break;
+		case "Mulitipcation":
+			System.out.println(a*b);
+			break;
+		case "division":
+			System.out.println(a/b);
+
+		default:
+				System.out.println("Invalid operation:");
+		
+		}
+	}
+	
+
+}
